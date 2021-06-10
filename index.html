@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Task</title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+        
+	<div class="container">
+		<div class="row">
+            <div class="col-md-12" align="center">
+                    <h2 class="mt-5">Create Record</h2>
+                    <p>Please fill this form and submit to add movie record to the database.</p>
+					
+				<form align="center" action="upload.php" method="POST" enctype="multipart/form-data">
+				
+			       <label for="name"><b>Movie name: </b></label>
+				   <input type="text" placeholder="Enter Name" name="fullname"required><br>
+				   
+				   <label for="img"><b>Image: </b></label>
+				   <input type="text" placeholder="Enter image link" name="uploadfile" required><br>
+				   
+				   <label for="summary"><b>Movie summary: </b></label>
+				   <input type="textarea" placeholder="Enter summary" name="summary" required><br>
+				   
+				    <button type="submit" name="upload" class="btn btn-primary">UPLOAD</button>
+					<a href="read.php" class="btn btn-secondary ml-2">Cancel</a>
+				</form>
+				
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
